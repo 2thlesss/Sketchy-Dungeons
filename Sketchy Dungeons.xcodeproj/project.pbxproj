@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */; };
+		97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5BA2A22683A00F2E69F /* ContentView.swift */; };
+		97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A5BC2A22683A00F2E69F /* Assets.xcassets */; };
+		97A9A5C02A22683A00F2E69F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A5BF2A22683A00F2E69F /* Preview Assets.xcassets */; };
+		97A9A5CA2A22683A00F2E69F /* Sketchy_DungeonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5C92A22683A00F2E69F /* Sketchy_DungeonsTests.swift */; };
+		97A9A5D42A22683A00F2E69F /* Sketchy_DungeonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5D32A22683A00F2E69F /* Sketchy_DungeonsUITests.swift */; };
+		97A9A5D62A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5D52A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A9A5C62A22683A00F2E69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A9A5AD2A22683A00F2E69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A9A5B42A22683A00F2E69F;
+			remoteInfo = "Sketchy Dungeons";
+		};
+		97A9A5D02A22683A00F2E69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A9A5AD2A22683A00F2E69F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A9A5B42A22683A00F2E69F;
+			remoteInfo = "Sketchy Dungeons";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketchy Dungeons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsApp.swift; sourceTree = "<group>"; };
+		97A9A5BA2A22683A00F2E69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97A9A5BC2A22683A00F2E69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97A9A5BF2A22683A00F2E69F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97A9A5C52A22683A00F2E69F /* Sketchy DungeonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sketchy DungeonsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A5C92A22683A00F2E69F /* Sketchy_DungeonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsTests.swift; sourceTree = "<group>"; };
+		97A9A5CF2A22683A00F2E69F /* Sketchy DungeonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sketchy DungeonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A5D32A22683A00F2E69F /* Sketchy_DungeonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsUITests.swift; sourceTree = "<group>"; };
+		97A9A5D52A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97A9A5B22A22683A00F2E69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5C22A22683A00F2E69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5CC2A22683A00F2E69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97A9A5AC2A22683A00F2E69F = {
+			isa = PBXGroup;
+			children = (
+				97A9A5B72A22683A00F2E69F /* Sketchy Dungeons */,
+				97A9A5C82A22683A00F2E69F /* Sketchy DungeonsTests */,
+				97A9A5D22A22683A00F2E69F /* Sketchy DungeonsUITests */,
+				97A9A5B62A22683A00F2E69F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97A9A5B62A22683A00F2E69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */,
+				97A9A5C52A22683A00F2E69F /* Sketchy DungeonsTests.xctest */,
+				97A9A5CF2A22683A00F2E69F /* Sketchy DungeonsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97A9A5B72A22683A00F2E69F /* Sketchy Dungeons */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */,
+				97A9A5BA2A22683A00F2E69F /* ContentView.swift */,
+				97A9A5BC2A22683A00F2E69F /* Assets.xcassets */,
+				97A9A5BE2A22683A00F2E69F /* Preview Content */,
+			);
+			path = "Sketchy Dungeons";
+			sourceTree = "<group>";
+		};
+		97A9A5BE2A22683A00F2E69F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5BF2A22683A00F2E69F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97A9A5C82A22683A00F2E69F /* Sketchy DungeonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5C92A22683A00F2E69F /* Sketchy_DungeonsTests.swift */,
+			);
+			path = "Sketchy DungeonsTests";
+			sourceTree = "<group>";
+		};
+		97A9A5D22A22683A00F2E69F /* Sketchy DungeonsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5D32A22683A00F2E69F /* Sketchy_DungeonsUITests.swift */,
+				97A9A5D52A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift */,
+			);
+			path = "Sketchy DungeonsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97A9A5B42A22683A00F2E69F /* Sketchy Dungeons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A9A5D92A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy Dungeons" */;
+			buildPhases = (
+				97A9A5B12A22683A00F2E69F /* Sources */,
+				97A9A5B22A22683A00F2E69F /* Frameworks */,
+				97A9A5B32A22683A00F2E69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sketchy Dungeons";
+			productName = "Sketchy Dungeons";
+			productReference = 97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97A9A5C42A22683A00F2E69F /* Sketchy DungeonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A9A5DC2A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy DungeonsTests" */;
+			buildPhases = (
+				97A9A5C12A22683A00F2E69F /* Sources */,
+				97A9A5C22A22683A00F2E69F /* Frameworks */,
+				97A9A5C32A22683A00F2E69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A9A5C72A22683A00F2E69F /* PBXTargetDependency */,
+			);
+			name = "Sketchy DungeonsTests";
+			productName = "Sketchy DungeonsTests";
+			productReference = 97A9A5C52A22683A00F2E69F /* Sketchy DungeonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97A9A5CE2A22683A00F2E69F /* Sketchy DungeonsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A9A5DF2A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy DungeonsUITests" */;
+			buildPhases = (
+				97A9A5CB2A22683A00F2E69F /* Sources */,
+				97A9A5CC2A22683A00F2E69F /* Frameworks */,
+				97A9A5CD2A22683A00F2E69F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A9A5D12A22683A00F2E69F /* PBXTargetDependency */,
+			);
+			name = "Sketchy DungeonsUITests";
+			productName = "Sketchy DungeonsUITests";
+			productReference = 97A9A5CF2A22683A00F2E69F /* Sketchy DungeonsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97A9A5AD2A22683A00F2E69F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					97A9A5B42A22683A00F2E69F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					97A9A5C42A22683A00F2E69F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 97A9A5B42A22683A00F2E69F;
+					};
+					97A9A5CE2A22683A00F2E69F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 97A9A5B42A22683A00F2E69F;
+					};
+				};
+			};
+			buildConfigurationList = 97A9A5B02A22683A00F2E69F /* Build configuration list for PBXProject "Sketchy Dungeons" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97A9A5AC2A22683A00F2E69F;
+			productRefGroup = 97A9A5B62A22683A00F2E69F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97A9A5B42A22683A00F2E69F /* Sketchy Dungeons */,
+				97A9A5C42A22683A00F2E69F /* Sketchy DungeonsTests */,
+				97A9A5CE2A22683A00F2E69F /* Sketchy DungeonsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97A9A5B32A22683A00F2E69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A5C02A22683A00F2E69F /* Preview Assets.xcassets in Resources */,
+				97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5C32A22683A00F2E69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5CD2A22683A00F2E69F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97A9A5B12A22683A00F2E69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */,
+				97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5C12A22683A00F2E69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A5CA2A22683A00F2E69F /* Sketchy_DungeonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A5CB2A22683A00F2E69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A5D42A22683A00F2E69F /* Sketchy_DungeonsUITests.swift in Sources */,
+				97A9A5D62A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97A9A5C72A22683A00F2E69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A9A5B42A22683A00F2E69F /* Sketchy Dungeons */;
+			targetProxy = 97A9A5C62A22683A00F2E69F /* PBXContainerItemProxy */;
+		};
+		97A9A5D12A22683A00F2E69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A9A5B42A22683A00F2E69F /* Sketchy Dungeons */;
+			targetProxy = 97A9A5D02A22683A00F2E69F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97A9A5D72A22683A00F2E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97A9A5D82A22683A00F2E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97A9A5DA2A22683A00F2E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sketchy Dungeons/Preview Content\"";
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-Dungeons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97A9A5DB2A22683A00F2E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sketchy Dungeons/Preview Content\"";
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-Dungeons";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97A9A5DD2A22683A00F2E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-DungeonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sketchy Dungeons.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sketchy Dungeons";
+			};
+			name = Debug;
+		};
+		97A9A5DE2A22683A00F2E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-DungeonsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sketchy Dungeons.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sketchy Dungeons";
+			};
+			name = Release;
+		};
+		97A9A5E02A22683A00F2E69F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-DungeonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sketchy Dungeons";
+			};
+			name = Debug;
+		};
+		97A9A5E12A22683A00F2E69F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GKB9JM4V8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.treeves.Sketchy-DungeonsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sketchy Dungeons";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97A9A5B02A22683A00F2E69F /* Build configuration list for PBXProject "Sketchy Dungeons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A5D72A22683A00F2E69F /* Debug */,
+				97A9A5D82A22683A00F2E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A9A5D92A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy Dungeons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A5DA2A22683A00F2E69F /* Debug */,
+				97A9A5DB2A22683A00F2E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A9A5DC2A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy DungeonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A5DD2A22683A00F2E69F /* Debug */,
+				97A9A5DE2A22683A00F2E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A9A5DF2A22683A00F2E69F /* Build configuration list for PBXNativeTarget "Sketchy DungeonsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A5E02A22683A00F2E69F /* Debug */,
+				97A9A5E12A22683A00F2E69F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97A9A5AD2A22683A00F2E69F /* Project object */;
+}
