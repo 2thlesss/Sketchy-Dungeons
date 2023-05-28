@@ -14,6 +14,11 @@
 		97A9A5CA2A22683A00F2E69F /* Sketchy_DungeonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5C92A22683A00F2E69F /* Sketchy_DungeonsTests.swift */; };
 		97A9A5D42A22683A00F2E69F /* Sketchy_DungeonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5D32A22683A00F2E69F /* Sketchy_DungeonsUITests.swift */; };
 		97A9A5D62A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5D52A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift */; };
+		97A9A5E32A22685800F2E69F /* SketchyRaceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */; };
+		97A9A5E92A229BFF00F2E69F /* SketchyWeaponBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */; };
+		97A9A5EB2A22C14100F2E69F /* SketchyWeaponAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5EA2A22C14100F2E69F /* SketchyWeaponAttributes.swift */; };
+		97A9A5ED2A22CA4E00F2E69F /* SketchyPlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */; };
+		97A9A5EF2A22D18500F2E69F /* CharacterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		97A9A5CF2A22683A00F2E69F /* Sketchy DungeonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sketchy DungeonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A9A5D32A22683A00F2E69F /* Sketchy_DungeonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsUITests.swift; sourceTree = "<group>"; };
 		97A9A5D52A22683A00F2E69F /* Sketchy_DungeonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyRaceBase.swift; sourceTree = "<group>"; };
+		97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyWeaponBase.swift; sourceTree = "<group>"; };
+		97A9A5EA2A22C14100F2E69F /* SketchyWeaponAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyWeaponAttributes.swift; sourceTree = "<group>"; };
+		97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchyPlayerClass.swift; sourceTree = "<group>"; };
+		97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			children = (
 				97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */,
 				97A9A5BA2A22683A00F2E69F /* ContentView.swift */,
+				97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */,
+				97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */,
+				97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */,
+				97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */,
+				97A9A5EA2A22C14100F2E69F /* SketchyWeaponAttributes.swift */,
 				97A9A5BC2A22683A00F2E69F /* Assets.xcassets */,
 				97A9A5BE2A22683A00F2E69F /* Preview Content */,
 			);
@@ -259,6 +274,11 @@
 			files = (
 				97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */,
 				97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */,
+				97A9A5EB2A22C14100F2E69F /* SketchyWeaponAttributes.swift in Sources */,
+				97A9A5E92A229BFF00F2E69F /* SketchyWeaponBase.swift in Sources */,
+				97A9A5E32A22685800F2E69F /* SketchyRaceBase.swift in Sources */,
+				97A9A5EF2A22D18500F2E69F /* CharacterSheet.swift in Sources */,
+				97A9A5ED2A22CA4E00F2E69F /* SketchyPlayerClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
