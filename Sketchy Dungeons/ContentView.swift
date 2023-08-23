@@ -11,111 +11,148 @@ class PlayerCharacter {
     var race: SketchyRaceBase
     var playerClass: SketchyPlayerClass
     var level: Int
+    var weapon: PlayerWeapon?
     
-    init(race: SketchyRaceBase, playerClass: SketchyPlayerClass, level: Int) {
+    init(race: SketchyRaceBase, playerClass: SketchyPlayerClass, level: Int, weapon: PlayerWeapon? = nil) {
         self.race = race
         self.playerClass = playerClass
         self.level = level
+        self.weapon = weapon
     }
-    
-    func increaseLevel() {
-        level += 1
-        increaseHitPoints()
-    }
-    
-    private func increaseHitPoints() {
-        let hitDie = playerClass.hitDie
-        race.hitPoints += hitDie
+}
+
+class WeaponGenerator: ObservableObject {
+    @Published var weaponType: SketchyWeaponBase?
+    @Published var weaponFlavor: SketchyWeaponAttribues?
+    @Published var playerWeapon: PlayerWeapon?
+
+    func generateWeapon() -> PlayerWeapon? {
+        guard let type = weaponType, let flavor = weaponFlavor else {
+            return nil
+        }
+        return PlayerWeapon(type: type, flavor: flavor)
     }
 }
 
 class CharacterGenerator: ObservableObject {
     @Published var selectedRace: SketchyRaceBase?
     @Published var selectedClass: SketchyPlayerClass?
-    @Published var playerCharacter:PlayerCharacter?
-    func generateCharacter() -> PlayerCharacter? {
+    @Published var playerCharacter: PlayerCharacter?
+
+    func generateCharacter(using weaponGenerator: WeaponGenerator) -> PlayerCharacter? {
         guard let race = selectedRace, let playerClass = selectedClass else {
             return nil
         }
         
-        return PlayerCharacter(race: race, playerClass: playerClass, level: 1)
+        let weaponToUse = weaponGenerator.playerWeapon ?? PlayerWeapon(type: SketchyWeaponBase.defaultWeaponType(), flavor: SketchyWeaponAttribues.defaultAttributeType())
+        return PlayerCharacter(race: race, playerClass: playerClass, level: 1, weapon: weaponToUse)
+    }
+
+}
+
+class PlayerWeapon {
+    var type: SketchyWeaponBase
+    var flavor: SketchyWeaponAttribues
+    init(type: SketchyWeaponBase, flavor: SketchyWeaponAttribues) {
+        self.type = type
+        self.flavor = flavor
     }
 }
 
-struct ContentView: View {
-    @ObservedObject private var characterGenerator = CharacterGenerator()
-    
-    
-    var body: some View {
-        NavigationView{
-        VStack {
-            Text("Character Generation")
-                .font(.title)
+// ContentView will remain as it is
 
-            // Race selection
-            Text("Select Race:")
-                .font(.headline)
-            
-            HStack {
-                Button("Human") {
-                    characterGenerator.selectedRace = Human()
-//                    print(characterGenerator.selectedRace!)
-//                    print(characterGenerator.selectedRace!.name)
-//                    print(characterGenerator.selectedRace!.heart)
-//                    print(characterGenerator.selectedRace!.brains)
+   
+    struct ContentView: View {
+        @ObservedObject private var characterGenerator = CharacterGenerator()
+        @ObservedObject private var weaponGenerator = WeaponGenerator()
+        
+        var body: some View {
+            NavigationView{
+                VStack {
+                    Text("Character Generation")
+                        .font(.title)
                     
+                    // Race selection
+                    Text("Select Race:")
+                        .font(.headline)
                     
+                    HStack {
+                        Button("Human") {
+                            characterGenerator.selectedRace = Human()
+                            //                    print(characterGenerator.selectedRace!)
+                            //                    print(characterGenerator.selectedRace!.name)
+                            //                    print(characterGenerator.selectedRace!.heart)
+                            //                    print(characterGenerator.selectedRace!.brains)
+                            
+                            
+                            
+                        }
+                        
+                        Button("Elf") {
+                            characterGenerator.selectedRace = Elf()
+                        }
+                        Button ("Dwarf") {
+                            characterGenerator.selectedRace = Dwarf()
+                        }
+                        Button ("Halfling") {
+                            characterGenerator.selectedRace = Halfling()
+                        }
+                        Button("Half-Orc") {
+                            characterGenerator.selectedRace = HalfOrc()
+                        }
+                    }
+                    .padding()
                     
-                }
-                
-                Button("Elf") {
-                    characterGenerator.selectedRace = Elf()
-                }
-                Button ("Dwarf") {
-                    characterGenerator.selectedRace = Dwarf()
-                }
-                Button ("Halfling") {
-                    characterGenerator.selectedRace = Halfling()
-                }
-                Button("Half-Orc") {
-                    characterGenerator.selectedRace = HalfOrc()
+                    // Class selection
+                    Text("Select Class:")
+                        .font(.headline)
+                    
+                    HStack {
+                        Button("Rogue") {
+                            characterGenerator.selectedClass = Rogue(skillPoints: 0, race: SketchyRaceBase())
+                            
+                        }
+                        Button ("Caster") {
+                            characterGenerator.selectedClass =
+                            Caster(skillPoints: 0, race: SketchyRaceBase())
+                        }
+                        Button ("Fighter") {
+                            characterGenerator.selectedClass =
+                            Fighter(skillPoints: 0, race:SketchyRaceBase())
+                        }
+                    }
+                    .padding()
+//                    Text ("Starting Weapon")
+//                        .font(.headline)
+//                    HStack{
+//                        Button ("Weapon") {
+//                            if let weapon = weaponGenerator.generateWeapon() {
+//                                weaponGenerator.playerWeapon = weapon
+//                            }
+//
+//
+//                        }
+//                    }
+                    .padding()
+                    
+                    // Generate character button
+                    if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator) {
+                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerCharacter.weapon?.type ?? SketchyWeaponBase.defaultWeaponType())) {
+                            Text("Generate Character")
+                        }
+                    }
+
+
+                    
                 }
             }
-            .padding()
-
-            // Class selection
-            Text("Select Class:")
-                .font(.headline)
-
-            HStack {
-                Button("Rogue") {
-                    characterGenerator.selectedClass = Rogue(skillPoints: 0, race: SketchyRaceBase())
-                    
-                }
-                Button ("Caster") {
-                    characterGenerator.selectedClass =
-                    Caster(skillPoints: 0, race: SketchyRaceBase())
-                }
-                Button ("Fighter") {
-                    characterGenerator.selectedClass =
-                    Fighter(skillPoints: 0, race:SketchyRaceBase())
-                }
-            }
-            .padding()
-            
-            // Generate character button
-            if let playerCharacter = characterGenerator.generateCharacter() {
-                              NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass)) {
-                                  Text("Generate Character")
-                              }
-                          }
-                       }
-                   }
-               }
-           }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        }
     }
-}
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
+    }
+    
+

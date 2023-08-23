@@ -56,3 +56,8 @@ class battleAxe : SketchyWeaponBase {
     }
 }
 
+extension SketchyWeaponBase {
+    static func defaultWeaponType() -> SketchyWeaponBase {
+        return SketchyWeaponBase(name: "Newbie Club", damage: 1, damageType: "unknown", weight: 1, cost: 1)
+    }
+}

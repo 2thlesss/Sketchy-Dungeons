@@ -49,3 +49,8 @@ class Holy : SketchyWeaponAttribues {
     super.init(name: "Holy", damage: weapon.damage + Int.random(in: 1...6), damageType: "holy", weight: weapon.weight, cost: weapon.cost)
     }
 }
+extension SketchyWeaponAttribues {
+    static func defaultAttributeType() -> SketchyWeaponAttribues {
+        return SketchyWeaponAttribues(name: "Newbie Power", damage: 1, damageType: "Noob", weight: 5, cost: 1)
+    }
+}
