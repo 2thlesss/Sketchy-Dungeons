@@ -38,3 +38,14 @@ class Ice : SketchyWeaponAttribues {
     }
 }
 
+class unHoly : SketchyWeaponAttribues {
+    init(weapon :SketchyWeaponBase){
+    super.init(name: "unHoly", damage: weapon.damage + Int.random(in: 1...6), damageType: "unholy", weight: weapon.weight, cost: weapon.cost)
+    }
+}
+
+class Holy : SketchyWeaponAttribues {
+    init(weapon :SketchyWeaponBase){
+    super.init(name: "Holy", damage: weapon.damage + Int.random(in: 1...6), damageType: "holy", weight: weapon.weight, cost: weapon.cost)
+    }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970524A02A969348006E3748 /* InventorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705249F2A969348006E3748 /* InventorySheet.swift */; };
 		97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */; };
 		97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5BA2A22683A00F2E69F /* ContentView.swift */; };
 		97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A5BC2A22683A00F2E69F /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9705249F2A969348006E3748 /* InventorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySheet.swift; sourceTree = "<group>"; };
 		97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketchy Dungeons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsApp.swift; sourceTree = "<group>"; };
 		97A9A5BA2A22683A00F2E69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */,
 				97A9A5BA2A22683A00F2E69F /* ContentView.swift */,
 				97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */,
+				9705249F2A969348006E3748 /* InventorySheet.swift */,
 				97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */,
 				97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */,
 				97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */,
@@ -278,6 +281,7 @@
 				97A9A5E92A229BFF00F2E69F /* SketchyWeaponBase.swift in Sources */,
 				97A9A5E32A22685800F2E69F /* SketchyRaceBase.swift in Sources */,
 				97A9A5EF2A22D18500F2E69F /* CharacterSheet.swift in Sources */,
+				970524A02A969348006E3748 /* InventorySheet.swift in Sources */,
 				97A9A5ED2A22CA4E00F2E69F /* SketchyPlayerClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

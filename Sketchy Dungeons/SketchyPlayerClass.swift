@@ -4,37 +4,38 @@
 //
 //  Created by Thomas Jadie Reeves on 5/27/23.
 //
-
 import Foundation
 
-class SketchyPlayerClass: SketchyRaceBase {
+class SketchyPlayerClass {
     var className: String
+    var level: Int = 1
+    var hitDie: Int = 0
+    var race: SketchyRaceBase?
     
-    init(className: String) {
+    init(className: String, race: SketchyRaceBase?) {
         self.className = className
+        self.race = race
     }
+    
 }
 
 class Rogue: SketchyPlayerClass {
-    var hitDie: Int
-    var skillPoints: Int
-    
-    init(skillPoints: Int) {
-        self.hitDie = Int.random(in: 1...6)
-        self.skillPoints = skillPoints
-        super.init(className: "Rogue")
+    init(skillPoints: Int, race: SketchyRaceBase?) {
+        super.init(className: "Rogue", race: race)
+        hitDie = Int.random(in: 1...6)
     }
     
-    func backstab() -> Int {
-        let damage = brains * 2
-        return damage
+}
+class Caster: SketchyPlayerClass {
+    init (skillPoints: Int, race: SketchyRaceBase?){
+        super.init(className: "Caster", race: race)
+        hitDie = Int.random(in: 1...4)
     }
 }
 
-    class Caster {
-        // Add properties and methods specific to the Caster class
+class Fighter : SketchyPlayerClass {
+    init (skillPoints: Int, race: SketchyRaceBase?) {
+        super.init(className: "Fighter", race: race)
     }
-
-    class Fighter {
-        // Add properties and methods specific to the Fighter class
-    }
+    // i need the class fighter to match the class caster//
+}
