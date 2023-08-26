@@ -50,6 +50,18 @@ class Holy : SketchyWeaponAttribues {
     }
 }
 extension SketchyWeaponAttribues {
+    
+    static var allAttributeTypes : [SketchyWeaponAttribues] = [
+        Sharp(weapon: SketchyWeaponBase.defaultWeaponType()),
+        Flame(weapon: SketchyWeaponBase.defaultWeaponType()),
+        Ice(weapon: SketchyWeaponBase.defaultWeaponType()),
+        Holy(weapon: SketchyWeaponBase.defaultWeaponType()),
+        unHoly(weapon: SketchyWeaponBase.defaultWeaponType())
+    ]
+    static func randomAttributeType() -> SketchyWeaponAttribues {
+        return allAttributeTypes.randomElement() ?? defaultAttributeType()
+    }
+    
     static func defaultAttributeType() -> SketchyWeaponAttribues {
         return SketchyWeaponAttribues(name: "Newbie Power", damage: 1, damageType: "Noob", weight: 5, cost: 1)
     }

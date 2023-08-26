@@ -26,6 +26,12 @@ class WeaponGenerator: ObservableObject {
     @Published var weaponFlavor: SketchyWeaponAttribues?
     @Published var playerWeapon: PlayerWeapon?
 
+    init() {
+        self.weaponType = SketchyWeaponBase.randomWeaponType() // Assuming a method that returns a random weapon type
+        self.weaponFlavor = SketchyWeaponAttribues.randomAttributeType() // Assuming a method that returns a random attribute type
+        self.playerWeapon = generateWeapon()
+    }
+
     func generateWeapon() -> PlayerWeapon? {
         guard let type = weaponType, let flavor = weaponFlavor else {
             return nil
@@ -33,6 +39,7 @@ class WeaponGenerator: ObservableObject {
         return PlayerWeapon(type: type, flavor: flavor)
     }
 }
+
 
 class CharacterGenerator: ObservableObject {
     @Published var selectedRace: SketchyRaceBase?
@@ -43,8 +50,8 @@ class CharacterGenerator: ObservableObject {
         guard let race = selectedRace, let playerClass = selectedClass else {
             return nil
         }
-        
-        let weaponToUse = weaponGenerator.playerWeapon ?? PlayerWeapon(type: SketchyWeaponBase.defaultWeaponType(), flavor: SketchyWeaponAttribues.defaultAttributeType())
+
+        let weaponToUse = weaponGenerator.generateWeapon() ?? PlayerWeapon(type: SketchyWeaponBase.defaultWeaponType(), flavor: SketchyWeaponAttribues.defaultAttributeType())
         return PlayerCharacter(race: race, playerClass: playerClass, level: 1, weapon: weaponToUse)
     }
 
@@ -122,22 +129,11 @@ class PlayerWeapon {
                         }
                     }
                     .padding()
-//                    Text ("Starting Weapon")
-//                        .font(.headline)
-//                    HStack{
-//                        Button ("Weapon") {
-//                            if let weapon = weaponGenerator.generateWeapon() {
-//                                weaponGenerator.playerWeapon = weapon
-//                            }
-//
-//
-//                        }
-//                    }
-                    .padding()
+                   
                     
                     // Generate character button
                     if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator) {
-                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerCharacter.weapon?.type ?? SketchyWeaponBase.defaultWeaponType())) {
+                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerCharacter.weapon?.type ?? SketchyWeaponBase.defaultWeaponType(), attri: .defaultAttributeType())) {
                             Text("Generate Character")
                         }
                     }

@@ -12,6 +12,7 @@ struct CharacterSheet: View {
     let race: SketchyRaceBase
     let playerClass: SketchyPlayerClass
     let weapon : SketchyWeaponBase
+    let attri : SketchyWeaponAttribues
     var body: some View {
         VStack {
             Text("Race: \(race.name)")
@@ -24,7 +25,8 @@ struct CharacterSheet: View {
             Text ("Armor: \(race.armor)")
             Text ("Hit Points: \(race.hitPoints)")
             // Replace nameClass with the appropriate property
-            Text ("Weapon : \(weapon.name)")
+            Text ("Weapon : \(attri.name) \(weapon.name)")
+            
             Button("Dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
@@ -36,6 +38,6 @@ struct CharacterSheet: View {
 
 struct CharacterSheet_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 5, race: SketchyRaceBase()), weapon: SketchyWeaponBase(name: "Sword" , damage: 0, damageType: "slashing", weight: 0, cost: 0))
+        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 5, race: SketchyRaceBase()), weapon: SketchyWeaponBase(name: "Sword" , damage: 0, damageType: "slashing", weight: 0, cost: 0), attri: SketchyWeaponAttribues.defaultAttributeType())
     }
 }

@@ -57,7 +57,21 @@ class battleAxe : SketchyWeaponBase {
 }
 
 extension SketchyWeaponBase {
+    static var allWeaponTypes: [SketchyWeaponBase] = [
+        dagger(),
+        staff(),
+        sword(),
+        longBow(),
+        greatSword(),
+        battleAxe()
+    ]
+    
+    static func randomWeaponType() -> SketchyWeaponBase {
+        return allWeaponTypes.randomElement() ?? defaultWeaponType()
+    }
+    
     static func defaultWeaponType() -> SketchyWeaponBase {
         return SketchyWeaponBase(name: "Newbie Club", damage: 1, damageType: "unknown", weight: 1, cost: 1)
     }
 }
+// use let randomWeapon = SketchyWeaponBase.randomWeaponType() to call random weapons
