@@ -5,6 +5,7 @@
 //  Created by Thomas Jadie Reeves on 5/27/23.
 //
 import SwiftUI
+import UIKit
 
 struct CharacterSheet: View {
     @Environment(\.presentationMode) var presentationMode
@@ -12,7 +13,8 @@ struct CharacterSheet: View {
     var race: SketchyRaceBase
     var playerClass: SketchyPlayerClass
     var weapon: PlayerWeapon
-
+   
+    
     var body: some View {
         ZStack { UIController.BackgroundGradient()
             VStack {
@@ -30,23 +32,28 @@ struct CharacterSheet: View {
                 Text ("Armor: \(race.armor)")
                 Text ("Hit Points: \(race.hitPoints)")
                 Text("Weapon: \(weapon.flavor.name) \(weapon.type.name)")
-                    .font(.title2)
-                    .padding()
+                
+                
+                
+                
+                
+                
             }
         }
             Button("Dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
-            .padding()
+        }
         
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
+        
     }
-}
+
 
 struct CharacterSheet_Previews: PreviewProvider {
     static var previews: some View {
         // Ensure to define Human, Rogue, dagger, and Sharp before using them here
-        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 0, race: Human()), weapon: PlayerWeapon(type: dagger(), flavor: Sharp(weapon: dagger())))
+        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 0, race: Human()), weapon: PlayerWeapon(type: Dagger(), flavor: Sharp(weapon: Dagger())))
     }
 }
+
+

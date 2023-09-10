@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
 
 class SketchyWeaponBase {
     var name: String
@@ -13,52 +15,56 @@ class SketchyWeaponBase {
     var damageType: String
     var weight: Int
     var cost: Int
+    var picName: String
     
-    init(name: String, damage: Int, damageType: String, weight: Int, cost: Int) {
+    init(name: String, damage: Int, damageType: String, weight: Int, cost: Int, picName: String) {
         self.name = name
         self.damage = damage
         self.damageType = damageType
         self.weight = weight
         self.cost = cost
+        self.picName = picName
     }
 }
 
-class dagger: SketchyWeaponBase {
+class Dagger: SketchyWeaponBase {
     init() {
-        super.init(name: "Dagger", damage: Int.random(in: 1...4), damageType: "piercing", weight: 1, cost: 2)
+        super.init(name: "Dagger", damage: Int.random(in: 1...4), damageType: "piercing", weight: 1, cost: 2, picName: "Dagger")
+        
     }
 }
+
 class staff : SketchyWeaponBase {
     init() {
-        super.init(name: "Staff", damage: Int.random(in: 1...6), damageType: "bludgeoning", weight: 4, cost: 2)
+        super.init(name: "Staff", damage: Int.random(in: 1...6), damageType: "bludgeoning", weight: 4, cost: 2, picName: "staff")
     }
 }
 class sword : SketchyWeaponBase {
     init() {
-        super.init(name: "Sword", damage: Int.random(in: 1...8), damageType: "slashing", weight: 6, cost: 10)
+        super.init(name: "Sword", damage: Int.random(in: 1...8), damageType: "slashing", weight: 6, cost: 10, picName: "Longsword")
     }
 }
 
 class longBow : SketchyWeaponBase {
     init() {
-        super.init(name: "Long Bow", damage: Int.random(in:1...8), damageType: "piercing", weight: 2, cost: 25)
+        super.init(name: "Long Bow", damage: Int.random(in:1...8), damageType: "piercing", weight: 2, cost: 25, picName: "Bow")
     }
 }
 class greatSword : SketchyWeaponBase {
     init() {
-        super.init(name: "Great Sword", damage: Int.random(in: 1...12), damageType: "slashing", weight: 10, cost: 50)
+        super.init(name: "Great Sword", damage: Int.random(in: 1...12), damageType: "slashing", weight: 10, cost: 50, picName: "Greatsword_")
     }
 }
 
 class battleAxe : SketchyWeaponBase {
     init() {
-        super.init(name: "Battle Axe", damage: (Int.random(in: 1...6)) + (Int.random(in: 1...6)), damageType: "slashing", weight: 4, cost: 10)
+        super.init(name: "Battle Axe", damage: (Int.random(in: 1...6)) + (Int.random(in: 1...6)), damageType: "slashing", weight: 4, cost: 10, picName: "Battle_axe")
     }
 }
 
 extension SketchyWeaponBase {
     static var allWeaponTypes: [SketchyWeaponBase] = [
-        dagger(),
+        Dagger(),
         staff(),
         sword(),
         longBow(),
@@ -71,7 +77,7 @@ extension SketchyWeaponBase {
     }
     
     static func defaultWeaponType() -> SketchyWeaponBase {
-        return SketchyWeaponBase(name: "Newbie Club", damage: 1, damageType: "unknown", weight: 1, cost: 1)
+        return SketchyWeaponBase(name: "Newbie Club", damage: 1, damageType: "unknown", weight: 1, cost: 1, picName: "Staff")
     }
 }
 // use let randomWeapon = SketchyWeaponBase.randomWeaponType() to call random weapons

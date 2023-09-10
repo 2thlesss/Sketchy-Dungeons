@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Dagger_.png",
+      "filename" : "Dagger.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Dagger_@2x.png",
+      "filename" : "Dagger@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Dagger_@3x.png",
+      "filename" : "Dagger@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
