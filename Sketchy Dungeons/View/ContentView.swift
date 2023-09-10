@@ -74,7 +74,7 @@ struct ContentView: View {
     @ObservedObject private var weaponGenerator = WeaponGenerator()
     
     var body: some View {
-       NavigationView{
+        NavigationView{
             ZStack { UIController.BackgroundGradient()
                 VStack {
                     Text("Character Generation")
@@ -114,44 +114,52 @@ struct ContentView: View {
                     // Class selection
                     Text("Select Class:")
                         .font(.headline)
-                    
-                    HStack {
-                        Button("Rogue") {
-                            characterGenerator.selectedClass = Rogue(skillPoints: 0, race: SketchyRaceBase())
+                    ScrollView{
+                        VStack {
+                            Button(action: {
+                                characterGenerator.selectedClass = Caster(skillPoints: 0, race: SketchyRaceBase())
+                            }) {
+                                HStack{ Text("Caster")
+                                    Image("Caster")
+                                }
+                            }
+                            Button(action: {
+                                characterGenerator.selectedClass = Fighter(skillPoints: 0, race: SketchyRaceBase())
+                            }) {
+                                HStack{ Text("Fighter")
+                                    Image("Fighter")
+                                }
+                            }
+                            Button(action: {
+                                characterGenerator.selectedClass = Rogue(skillPoints: 0, race: SketchyRaceBase())
+                            }) {
+                                HStack{ Text("Rogue")
+                                    Image("Rogue")
+                                }
+                            }                            .padding()
                             
+                            
+                            // Generate character button
+                            // Generate character button
+                            if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator), let playerWeapon = weaponGenerator.playerWeapon {
+                                NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerWeapon)) {
+                                    Text("Generate Character")
+                                }
+                            }
                         }
-                        Button ("Caster") {
-                            characterGenerator.selectedClass =
-                            Caster(skillPoints: 0, race: SketchyRaceBase())
-                        }
-                        Button ("Fighter") {
-                            characterGenerator.selectedClass =
-                            Fighter(skillPoints: 0, race:SketchyRaceBase())
-                        }
+                        
+                        
+                        
                     }
-                    .padding()
-                    
-                    
-                    // Generate character button
-                    // Generate character button
-                    if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator), let playerWeapon = weaponGenerator.playerWeapon {
-                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerWeapon)) {
-                            Text("Generate Character")
-                        }
-                    }
-                    
-                    
-                    
-                    
                 }
             }
         }
     }
-}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
     
-
+    
+}
