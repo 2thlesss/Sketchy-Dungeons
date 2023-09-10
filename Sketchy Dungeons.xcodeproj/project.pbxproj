@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		970524A02A969348006E3748 /* InventorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705249F2A969348006E3748 /* InventorySheet.swift */; };
 		9771BAA62AAD5743001BC01E /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771BAA52AAD5743001BC01E /* UIController.swift */; };
+		97A0DC9E2AAE06E200421BC5 /* Dockerfile in Resources */ = {isa = PBXBuildFile; fileRef = 97A0DC9D2AAE06E200421BC5 /* Dockerfile */; };
 		97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */; };
 		97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5BA2A22683A00F2E69F /* ContentView.swift */; };
 		97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A5BC2A22683A00F2E69F /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		9705249F2A969348006E3748 /* InventorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySheet.swift; sourceTree = "<group>"; };
 		9771BAA52AAD5743001BC01E /* UIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
+		97A0DC9D2AAE06E200421BC5 /* Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dockerfile; sourceTree = "<group>"; };
 		97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketchy Dungeons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsApp.swift; sourceTree = "<group>"; };
 		97A9A5BA2A22683A00F2E69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		97A9A5AC2A22683A00F2E69F = {
 			isa = PBXGroup;
 			children = (
+				97A0DC9D2AAE06E200421BC5 /* Dockerfile */,
 				97A9A5B72A22683A00F2E69F /* Sketchy Dungeons */,
 				97A9A5C82A22683A00F2E69F /* Sketchy DungeonsTests */,
 				97A9A5D22A22683A00F2E69F /* Sketchy DungeonsUITests */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A9A5C02A22683A00F2E69F /* Preview Assets.xcassets in Resources */,
+				97A0DC9E2AAE06E200421BC5 /* Dockerfile in Resources */,
 				97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
