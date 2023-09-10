@@ -5,32 +5,37 @@
 //  Created by Thomas Jadie Reeves on 5/27/23.
 //
 import SwiftUI
-import UIKit
 
 struct CharacterSheet: View {
     @Environment(\.presentationMode) var presentationMode
-    let race: SketchyRaceBase
-    let playerClass: SketchyPlayerClass
-    let weapon : SketchyWeaponBase
-    let attri : SketchyWeaponAttribues
+    
+    var race: SketchyRaceBase
+    var playerClass: SketchyPlayerClass
+    var weapon: PlayerWeapon
+
     var body: some View {
         VStack {
+            Text("Character Details")
+                .font(.largeTitle)
+                .padding()
+            
             Text("Race: \(race.name)")
             Text("Class: \(playerClass.className)")
             Text("Heart: \(race.heart)")
-           
             Text("Muscles: \(race.muscles)")
             Text("Brains: \(race.brains)")
             Text("Luck: \(race.luck)")
             Text ("Armor: \(race.armor)")
             Text ("Hit Points: \(race.hitPoints)")
-            // Replace nameClass with the appropriate property
-            Text ("Weapon : \(attri.name) \(weapon.name)")
-            
+            Text("Weapon: \(weapon.flavor.name) \(weapon.type.name)")
+                .font(.title2)
+                .padding()
+        }
             Button("Dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
-        }
+            .padding()
+        
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
     }
@@ -38,6 +43,7 @@ struct CharacterSheet: View {
 
 struct CharacterSheet_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 5, race: SketchyRaceBase()), weapon: SketchyWeaponBase(name: "Sword" , damage: 0, damageType: "slashing", weight: 0, cost: 0), attri: SketchyWeaponAttribues.defaultAttributeType())
+        // Ensure to define Human, Rogue, dagger, and Sharp before using them here
+        CharacterSheet(race: Human(), playerClass: Rogue(skillPoints: 0, race: Human()), weapon: PlayerWeapon(type: dagger(), flavor: Sharp(weapon: dagger())))
     }
 }

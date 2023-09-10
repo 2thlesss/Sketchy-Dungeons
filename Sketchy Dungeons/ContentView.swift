@@ -132,11 +132,13 @@ class PlayerWeapon {
                    
                     
                     // Generate character button
-                    if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator) {
-                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerCharacter.weapon?.type ?? SketchyWeaponBase.defaultWeaponType(), attri: .defaultAttributeType())) {
+                    // Generate character button
+                    if let playerCharacter = characterGenerator.generateCharacter(using: weaponGenerator), let playerWeapon = weaponGenerator.playerWeapon {
+                        NavigationLink(destination: CharacterSheet(race: playerCharacter.race, playerClass: playerCharacter.playerClass, weapon: playerWeapon)) {
                             Text("Generate Character")
                         }
                     }
+
 
 
                     
