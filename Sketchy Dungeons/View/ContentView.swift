@@ -69,12 +69,13 @@ class PlayerWeapon {
 // ContentView will remain as it is
 
    
-    struct ContentView: View {
-        @ObservedObject private var characterGenerator = CharacterGenerator()
-        @ObservedObject private var weaponGenerator = WeaponGenerator()
-        
-        var body: some View {
-            NavigationView{
+struct ContentView: View {
+    @ObservedObject private var characterGenerator = CharacterGenerator()
+    @ObservedObject private var weaponGenerator = WeaponGenerator()
+    
+    var body: some View {
+       NavigationView{
+            ZStack { UIController.BackgroundGradient()
                 VStack {
                     Text("Character Generation")
                         .font(.title)
@@ -129,7 +130,7 @@ class PlayerWeapon {
                         }
                     }
                     .padding()
-                   
+                    
                     
                     // Generate character button
                     // Generate character button
@@ -138,15 +139,15 @@ class PlayerWeapon {
                             Text("Generate Character")
                         }
                     }
-
-
-
+                    
+                    
+                    
                     
                 }
             }
         }
     }
-    
+}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()

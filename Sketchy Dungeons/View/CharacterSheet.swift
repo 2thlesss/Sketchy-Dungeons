@@ -14,22 +14,25 @@ struct CharacterSheet: View {
     var weapon: PlayerWeapon
 
     var body: some View {
-        VStack {
-            Text("Character Details")
-                .font(.largeTitle)
-                .padding()
-            
-            Text("Race: \(race.name)")
-            Text("Class: \(playerClass.className)")
-            Text("Heart: \(race.heart)")
-            Text("Muscles: \(race.muscles)")
-            Text("Brains: \(race.brains)")
-            Text("Luck: \(race.luck)")
-            Text ("Armor: \(race.armor)")
-            Text ("Hit Points: \(race.hitPoints)")
-            Text("Weapon: \(weapon.flavor.name) \(weapon.type.name)")
-                .font(.title2)
-                .padding()
+        ZStack { UIController.BackgroundGradient()
+            VStack {
+                
+                Text("Character Details")
+                    .font(.largeTitle)
+                    .padding()
+                
+                Text("Race: \(race.name)")
+                Text("Class: \(playerClass.className)")
+                Text("Heart: \(race.heart)")
+                Text("Muscles: \(race.muscles)")
+                Text("Brains: \(race.brains)")
+                Text("Luck: \(race.luck)")
+                Text ("Armor: \(race.armor)")
+                Text ("Hit Points: \(race.hitPoints)")
+                Text("Weapon: \(weapon.flavor.name) \(weapon.type.name)")
+                    .font(.title2)
+                    .padding()
+            }
         }
             Button("Dismiss") {
                 presentationMode.wrappedValue.dismiss()

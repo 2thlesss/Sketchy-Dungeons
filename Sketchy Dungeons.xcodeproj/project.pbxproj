@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		970524A02A969348006E3748 /* InventorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9705249F2A969348006E3748 /* InventorySheet.swift */; };
+		9771BAA62AAD5743001BC01E /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9771BAA52AAD5743001BC01E /* UIController.swift */; };
 		97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */; };
 		97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A5BA2A22683A00F2E69F /* ContentView.swift */; };
 		97A9A5BD2A22683A00F2E69F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A5BC2A22683A00F2E69F /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		9705249F2A969348006E3748 /* InventorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventorySheet.swift; sourceTree = "<group>"; };
+		9771BAA52AAD5743001BC01E /* UIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
 		97A9A5B52A22683A00F2E69F /* Sketchy Dungeons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketchy Dungeons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketchy_DungeonsApp.swift; sourceTree = "<group>"; };
 		97A9A5BA2A22683A00F2E69F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9771BAA22AAD55C6001BC01E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9771BAA52AAD5743001BC01E /* UIController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9771BAA32AAD55D4001BC01E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5BA2A22683A00F2E69F /* ContentView.swift */,
+				9705249F2A969348006E3748 /* InventorySheet.swift */,
+				97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9771BAA42AAD55E5001BC01E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A5EA2A22C14100F2E69F /* SketchyWeaponAttributes.swift */,
+				97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */,
+				97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */,
+				97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		97A9A5AC2A22683A00F2E69F = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				97A9A5B82A22683A00F2E69F /* Sketchy_DungeonsApp.swift */,
-				97A9A5BA2A22683A00F2E69F /* ContentView.swift */,
-				97A9A5EE2A22D18500F2E69F /* CharacterSheet.swift */,
-				9705249F2A969348006E3748 /* InventorySheet.swift */,
-				97A9A5E22A22685800F2E69F /* SketchyRaceBase.swift */,
-				97A9A5EC2A22CA4E00F2E69F /* SketchyPlayerClass.swift */,
-				97A9A5E82A229BFF00F2E69F /* SketchyWeaponBase.swift */,
-				97A9A5EA2A22C14100F2E69F /* SketchyWeaponAttributes.swift */,
+				9771BAA22AAD55C6001BC01E /* Model */,
+				9771BAA32AAD55D4001BC01E /* View */,
+				9771BAA42AAD55E5001BC01E /* Controller */,
 				97A9A5BC2A22683A00F2E69F /* Assets.xcassets */,
 				97A9A5BE2A22683A00F2E69F /* Preview Content */,
 			);
@@ -277,6 +304,7 @@
 			files = (
 				97A9A5BB2A22683A00F2E69F /* ContentView.swift in Sources */,
 				97A9A5B92A22683A00F2E69F /* Sketchy_DungeonsApp.swift in Sources */,
+				9771BAA62AAD5743001BC01E /* UIController.swift in Sources */,
 				97A9A5EB2A22C14100F2E69F /* SketchyWeaponAttributes.swift in Sources */,
 				97A9A5E92A229BFF00F2E69F /* SketchyWeaponBase.swift in Sources */,
 				97A9A5E32A22685800F2E69F /* SketchyRaceBase.swift in Sources */,
